@@ -1,0 +1,25 @@
+import {BaseModel} from "@/providers/models/base-model";
+
+export interface MonitorLicenseModel extends BaseModel{
+    applicationQuantity: number,
+    usedStorageQuantity: number,
+    usedWebQuantity: number,
+    usedApplicationQuantity: number,
+    usedMiddlewareQuantity: number,
+    usedDbQuantity: number,
+    usedNetworkQuantity: number,
+    usedOsQuantity: number,
+    usedHardwareQuantity: number,
+    storageQuantity: number,
+    webQuantity: number,
+    middlewareQuantity: number,
+    dbQuantity: number,
+    networkQuantity: number,
+    osQuantity: number,
+    hardwareQuantity: number,
+    expireTime: string,
+    endDate: string,
+    startDate: string,
+    licenseCode: string,
+    orgId: number,
+}

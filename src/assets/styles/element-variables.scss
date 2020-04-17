@@ -1,0 +1,39 @@
+@import "variable";
+/*
+Write your variables here. All available variables can be
+found in element-ui/packages/theme-chalk/src/common/var.scss.
+For example, to overwrite the theme color:
+*/
+
+/* Color
+-------------------------- */
+$--color-primary: $-color-primary;
+$--color-danger: $-color-danger;
+$--color-info: $-color-info;
+$--color-text-primary: $-color-text-primary;
+$--color-text-regular: $-color-text-primary;
+$--color-text-secondary: $-color-text-primary;
+$--background-color-base: $-ui-background-color;
+
+/* Table
+-------------------------- */
+$--table-border-color: $-table-border-color;
+$--table-header-background-color: $-ui-background-color;
+$--table-row-hover-background-color: $-table-row-hover-background-color;
+$--table-current-row-background-color: $-table-current-row-background-color !default;
+
+/* Scrollbar
+--------------------------*/
+$--scrollbar-background-color: $-scrollbar-background-color;
+$--scrollbar-hover-background-color: $-scrollbar-hover-background-color;
+
+/* Menu
+--------------------------*/
+$--menu-item-font-size: $-menu-item-font-size;
+$--menu-background-color: $-menu-background-color;
+$--menu-item-hover-fill: $-menu-item-hover-fill;
+
+/* icon font path, required */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";

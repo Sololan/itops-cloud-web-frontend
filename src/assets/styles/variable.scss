@@ -1,0 +1,69 @@
+$-color-primary: #080367;
+$-color-danger: #D80D19;
+$-color-info: #B9BDC6;
+$-color-text-primary: #333;
+$-font-size-primary: 14px;
+
+$-app-background-color: #F7F6FB;
+$-ui-background-color: #EAEDF4;
+$-table-border-color: #E0E0E0;
+$-table-row-hover-background-color: #EAF4FE;
+$-table-current-row-background-color: #CAC8F0;
+
+$-header-background-color: #FFF;
+$-header-height: 80px;
+
+$-scrollbar-width: 10px;
+$-scrollbar-hover-background-color: $-color-primary;
+$-scrollbar-background-color: $-app-background-color;
+
+$-menu-width: 210px;
+$-menu-collapse-width: 64px;
+$-menu-background-color: #EAEDF4;
+$-menu-item-hover-fill: #DFE2E8;
+$-menu-item-font-size: 16px;
+$-menu-sub-item-font-size: $-menu-item-font-size;
+
+$-container-padding: 15px;
+
+$-login-box-width: 500px;
+$-login-box-width-small: 300px;
+
+$space-list: 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100;
+@for $num from 0 through 20 {
+  $space: $num * 5;
+  /* padding */
+  .p-#{$space} {padding: #{$space}px}
+  .p-t-#{$space} {padding-top: #{$space}px}
+  .p-l-#{$space} {padding-left: #{$space}px}
+  .p-r-#{$space} {padding-right: #{$space}px}
+  .p-b-#{$space} {padding-bottom: #{$space}px}
+  /* margin */
+  .m-#{$space} {margin: #{$space}px}
+  .m-t-#{$space} {margin-top: #{$space}px}
+  .m-l-#{$space} {margin-left: #{$space}px}
+  .m-r-#{$space} {margin-right: #{$space}px}
+  .m-b-#{$space} {margin-bottom: #{$space}px}
+}
+
+@mixin vertical-center {
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+  }
+
+  & > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+@mixin overflow-ellipsis {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
